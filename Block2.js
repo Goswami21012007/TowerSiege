@@ -11,10 +11,16 @@ class Block2{
       World.add(world, this.body);
     }
     display(){
+      if(this.body.speed<3){
+        push()
       var pos =this.body.position;
       rectMode(CENTER);
       fill(107,17,76);
       rect(pos.x, pos.y, this.width, this.height);
+      pop ()
+      }else{
+        World.remove(world,this.body)
+      }
     }
   };
 

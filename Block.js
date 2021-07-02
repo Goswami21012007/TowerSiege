@@ -17,16 +17,20 @@ class Block {
       World.add(world, this.body);
     }
     display(){
-      
-
-
-
-
-      push()
+      if(this.body.speed<3){
+        push()
       var pos =this.body.position;
       rectMode(CENTER);
       fill("yellow");
       rect(pos.x, pos.y, this.width, this.height);
-      pop()
+      pop ()
+      }else{
+        World.remove(world,this.body)
+      }
+
+
+
+
+      
     }
   };

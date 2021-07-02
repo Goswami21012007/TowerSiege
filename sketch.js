@@ -73,8 +73,8 @@ block28=new Block(627,150,20,40)
 //4th level
 block29=new Block(605,105,20,40)
 //polygon
-polygon=new Polygon (56,140,60,50)
-slingShot=new SlingShot(polygon.body,{x:58,y:159})
+polygon=new Polygon (100,140,60,50)
+slingShot=new SlingShot(polygon.body,{x:100,y:159})
 //polygon=Bodies.circle(50,200,20)
 //World.add(world,polygon)
 
